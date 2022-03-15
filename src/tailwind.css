@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Sarabun&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oxygen', sans-serif;
+}
+
+p, span, input, textarea, button {
+  font-family: 'Sarabun', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+button {
+  @apply active:scale-90 duration-150 bg-gradient-to-r from-violet-500 to-blue-500 text-white text-base text-white font-bold px-4 py-2 rounded-lg
+}
+
+input[type="text"] {
+  @apply border-2 border-blue-500 rounded-lg p-1 outline-none focus:ring ring-blue-500 ring-offset-2 duration-200 w-full
+}
+
+h1 {
+  @apply font-bold md:text-8xl text-6xl tracking-widest text-blue-500 font-bold
+}
+
+.subtitle {
+  @apply font-bold md:text-base text-sm text-gray-500 font-bold
+}
+
+.main-container {
+  @apply grid h-screen place-items-center
+}
+
+.main-container {
+  background-image: url('/mic.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
